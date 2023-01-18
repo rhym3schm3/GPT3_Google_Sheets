@@ -32,7 +32,7 @@ function updateResponse(prompt, row) {
   sheet.getRange(row, 2).setValue(json.choices[0].text);
 }
 
-function onEdit(e) {
+function editTrigger(e) {
   var sheet = e.source.getActiveSheet();
   var columnA = e.range.getColumn();
   var row = e.range.getRow();
